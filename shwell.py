@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 import os
-import pythowo
+import junelang
 
 while True:
-    text = input("(｡･ω･｡)ﾉ♡ > ")
-    if text.strip() == "cwear":
+    text = input("junelang> ")
+    if text.strip() == "clear":
         os.system('clear' if os.name == 'posix' else 'cls')
         continue
     if text.strip() == "":
         continue
-    result, error = pythowo.run("<stdin>", text)
+    result, error = junelang.run("<stdin>", text)
 
     if error:
         print(error.as_string())
